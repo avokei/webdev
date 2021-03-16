@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<!--
+https://webdesign.tutsplus.com/tutorials/bring-your-forms-up-to-date-with-css3-and-html5-validation--webdesign-4738
+-->
+<head>
+    <meta charset="utf-8">
+    <title>HTML5 Contact Form</title>
+    <link rel="stylesheet" media="screen" href="styles.css" >
+	<script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+</head>
+<body>
+	<form class="contact_form" action="action.php" method="post" name="contact_form">
+		<ul>
+			<li>
+				 <h2>Contact Us</h2>
+				 <span class="required_notification">* Denotes Required Field</span>
+			</li>
+			<li>
+				<label for="name">Name:</label>
+				<input type="text" id="name" name="name" placeholder="John Doe" required />
+			</li>
+		
+			<li>
+				<label for="email">Email:</label>
+				<input type="email" id="email" name="email" placeholder="john_doe@example.com" required/>
+				<span class="form_hint">Proper format "name@something.com"</span>
+			</li>
+			<li>
+				<label for="phoneUS">Phone Number:</label>
+				<input type="text" id="phone" name="phone" placeholder="xxx-xxx-xxxx" required pattern="[2-9]\d{2}-\d{3}-\d{4}"/>
+				<span class="form_hint">Proper format "555-555-5555"</span>
+			</li>
+			<li>
+				<label for="camelcode">5 camels:</label>
+				<input type="text" id="camelcode" name="camelcode" required pattern="([A-Z][a-z]{1}){5}"/>
+				<span class="form_hint">Proper format "XxXxXxXxXx"</span>
+			</li>
+			<li>
+				<label for="website">Website:</label>
+				<input type="url" id="website" name="website" placeholder="http://johndoe.com/" required pattern="(http|https)://.+"/>
+				<span class="form_hint">Proper format "http://someaddress.com"</span>
+			</li>
+			<li>
+				<label for="newsletter">Receive Our Newsletter?</label>
+				<input type = "radio" id = "newsletter" name = "newsletter" value="yes">Yes
+				<input type = "radio" id = "newsletter" name = "newsletter" value="no">No
+			</li>	
+			<li>
+				<label for="contact">How should we contact you?</label>
+				<input type = "checkbox" id = "contact" name = "email" >Email
+				<input type = "checkbox" id = "contact" name = "phone" >Phone
+			</li>			
+			
+			<li>
+				<label for="message">Message:</label>
+				<textarea id="message" name="message" cols="40" rows="6" required ></textarea>
+			</li>
+			
+			<li>
+				<button class="submit" type="submit">Submit Form</button>
+			</li>
+		</ul>
+	</form>
+</body>
+</html>
+<script>
+
+</script>

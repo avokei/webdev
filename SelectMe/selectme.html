@@ -1,0 +1,39 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>jQuery Selector Examples</title>
+	<link rel="stylesheet" href="main.css">
+	<!--
+	<script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+	-->
+	
+	<script   src="https://code.jquery.com/jquery-2.2.4.js"   integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI="   crossorigin="anonymous"></script>
+   
+	
+	<script src="selections.js"></script>
+</head>
+	
+<body>
+	<main>
+		<h1>jQuery Selectors</h1>
+		Click a button to select and color the background. 
+		Click the Clear button to remove the background color.
+		<div id="exampleid" class="exampleclass">This is the example div</div>
+		<div id="targetid" class = "targetclass">This is the target div</div>
+		<br>
+		<input type = "button" id="clear" value = "Clear">
+		<br><br>
+		<input type = "button" id="byLastDiv" class="byLastDiv" value = "By Last DIV"> 
+		<input type = "button" id="byLoT" class="byLoT" value = "By Last Of Type">
+		<input type = "button" id="byAfterDiv" class="byAfterDiv" value = "By After First DIV">
+		<input type = "button" id="byIndex" class="byIndex" value = "Index Child of Main">
+		<input type = "button" id="byIDAttribute" class="byIDAttribute" value = "By ID Attribute">
+		<input type = "button" id="byClassAttribute" class="byClassAttribute" value = "By Class Attribute">
+		<input type = "button" id="byText" class="byText" value = "DIV Contains example">
+		<input type = "button" id="bySecondDivWithText" class="bySecondDivWithText" value = "Second DIV With Text">
+		<input type = "button" id="byNot" class="byNot" value = "DIV Not">
+		<input type = "button" id="byLastChild" class="byLastChild" value = "Last Child">
+	</main>
+</body>
+</html>
